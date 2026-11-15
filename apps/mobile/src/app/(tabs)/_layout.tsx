@@ -12,6 +12,8 @@ export default function TabsLayout() {
       }}
     >
       <Tabs.Screen name="index" options={{ title: 'Map', headerShown: false }} />
+      <Tabs.Screen name="fuel" options={{ title: 'Fuel log' }} />
+      <Tabs.Screen name="analytics" options={{ title: 'Analytics' }} />
       <Tabs.Screen name="settings" options={{ title: 'Settings' }} />
     </Tabs>
   );

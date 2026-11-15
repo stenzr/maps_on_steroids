@@ -18,7 +18,16 @@ export default tseslint.config(
     ],
   },
   js.configs.recommended,
+  {
+    // Node-run CommonJS: Expo config plugins.
+    files: ['apps/mobile/plugins/**/*.js'],
+    languageOptions: { sourceType: 'commonjs', globals: { require: 'readonly', module: 'writable' } },
+  },
   ...tseslint.configs.strict,
+  {
+    files: ['apps/mobile/plugins/**/*.js'],
+    rules: { '@typescript-eslint/no-require-imports': 'off' },
+  },
   {
     rules: {
       '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],

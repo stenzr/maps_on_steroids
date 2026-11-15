@@ -14,7 +14,6 @@ const config: ExpoConfig = {
   version: '0.1.0',
   orientation: 'portrait',
   icon: './assets/icon.png',
-  userInterfaceStyle: 'automatic',
   android: {
     package: 'com.roadtripcompanion.app',
     adaptiveIcon: {
@@ -24,6 +23,8 @@ const config: ExpoConfig = {
       monochromeImage: './assets/android-icon-monochrome.png',
     },
     predictiveBackGestureEnabled: false,
+    // CSV export goes through the share sheet; no storage access needed.
+    blockedPermissions: ['android.permission.READ_EXTERNAL_STORAGE', 'android.permission.WRITE_EXTERNAL_STORAGE'],
   },
   ios: {
     // iOS comes later; kept so the same codebase builds there.
@@ -32,16 +33,22 @@ const config: ExpoConfig = {
   },
   plugins: [
     'expo-router',
+    'expo-sqlite',
     ['react-native-maps', { androidGoogleMapsApiKey: androidMapsKey }],
     [
       'expo-location',
       {
         locationWhenInUsePermission:
           'RoadTrip Companion uses your location to show where you are and which way you are heading on the map.',
-        // Background tracking (trip distance, refuel prompts) is enabled in milestone 4.
-        isAndroidBackgroundLocationEnabled: false,
+        locationAlwaysAndWhenInUsePermission:
+          'Allow location all the time to count trip distance and ask whether you refuelled after a petrol pump stop, even with the screen off.',
+        isAndroidBackgroundLocationEnabled: true,
+        isAndroidForegroundServiceEnabled: true,
       },
     ],
+    ['expo-notifications', { color: '#0B5FFF' }],
+    // Android Auto: points-of-interest app (template lists only).
+    ['./plugins/withAndroidAutoCategory', { category: 'poi' }],
   ],
   experiments: { typedRoutes: true },
 };
