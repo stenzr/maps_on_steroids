@@ -2,6 +2,8 @@ import Fastify, { type FastifyInstance } from 'fastify';
 import rateLimit from '@fastify/rate-limit';
 import { SECRET_HEADER, secretMatches } from './auth';
 import type { ProxyConfig } from './config';
+import { UpstreamError, type FetchFn } from './google/client';
+import { registerApiRoutes } from './routes/api';
 
 export interface ApiError {
   error: { code: string; message: string };
@@ -9,7 +11,10 @@ export interface ApiError {
 
 const PUBLIC_PATHS = new Set(['/health']);
 
-export async function buildServer(config: ProxyConfig, opts: { logger?: boolean } = {}): Promise<FastifyInstance> {
+export async function buildServer(
+  config: ProxyConfig,
+  opts: { logger?: boolean; fetchFn?: FetchFn } = {},
+): Promise<FastifyInstance> {
   const app = Fastify({
     logger: opts.logger ?? false,
     bodyLimit: 256 * 1024,
@@ -39,11 +44,13 @@ export async function buildServer(config: ProxyConfig, opts: { logger?: boolean 
   app.setErrorHandler((err: unknown, _req, reply) => {
     const e = (typeof err === 'object' && err !== null ? err : {}) as { statusCode?: unknown; code?: unknown; message?: unknown };
     const status = typeof e.statusCode === 'number' && e.statusCode >= 400 ? e.statusCode : 500;
-    if (status >= 500) app.log.error(err);
+    // Upstream (Google) errors carry a safe, user-facing message; other 5xx are hidden.
+    const expose = status < 500 || err instanceof UpstreamError;
+    if (status >= 500 && !(err instanceof UpstreamError)) app.log.error(err);
     const body: ApiError = {
       error: {
         code: typeof e.code === 'string' ? e.code : status >= 500 ? 'INTERNAL' : 'BAD_REQUEST',
-        message: status >= 500 ? 'Internal error' : typeof e.message === 'string' ? e.message : 'Bad request',
+        message: !expose ? 'Internal error' : typeof e.message === 'string' ? e.message : 'Bad request',
       },
     };
     return reply.code(status).send(body);
@@ -60,6 +67,8 @@ export async function buildServer(config: ProxyConfig, opts: { logger?: boolean 
 
   // Authenticated ping so the app can verify its PROXY_URL + secret in Settings.
   app.get('/v1/ping', async () => ({ ok: true }));
+
+  registerApiRoutes(app, { fetchFn: opts.fetchFn ?? (globalThis.fetch as unknown as FetchFn), apiKey: config.googleApiKey });
 
   return app;
 }
