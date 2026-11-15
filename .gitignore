@@ -1,0 +1,27 @@
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+.DS_Store
+
+# secrets — never commit
+.env
+.env.*
+!.env.example
+
+# Expo
+.expo/
+web-build/
+expo-env.d.ts
+.metro-health-check*
+apps/mobile/ios/
+apps/mobile/android/
+.kotlin/
+*.jks
+*.p8
+*.p12
+*.key
+*.pem
+*.mobileprovision
+
+npm-debug.*

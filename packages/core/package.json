@@ -1,0 +1,12 @@
+{
+  "name": "@roadtrip/core",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Pure, dependency-free domain logic for RoadTrip Companion (no React, no network).",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "test": "jest",
+    "typecheck": "tsc --noEmit"
+  }
+}

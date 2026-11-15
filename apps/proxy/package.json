@@ -1,0 +1,23 @@
+{
+  "name": "@roadtrip/proxy",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Thin proxy for Google Routes API and Places API (New) so the server key never ships in the app.",
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "start": "tsx src/main.ts",
+    "test": "jest",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fastify/rate-limit": "^11.2.2",
+    "@roadtrip/core": "*",
+    "dotenv": "^18.0.10",
+    "fastify": "^5.12.8",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.23.15"
+  }
+}
