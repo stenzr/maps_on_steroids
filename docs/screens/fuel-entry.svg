@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="740" viewBox="0 0 360 740">
+  <title>Add fuel form (mockup)</title>
+  <style>
+    text { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; fill: #101828; }
+    .b { font-weight: 700; } .s { font-weight: 600; } .m { fill: #475467; } .w { fill: #fff; } .p { fill: #0B5FFF; }
+    .box { fill: #fff; stroke: #D0D5DD; }
+  </style>
+  <defs><clipPath id="s"><rect x="8" y="8" width="344" height="724" rx="32"/></clipPath></defs>
+  <rect width="360" height="740" rx="40" fill="#101828"/>
+  <g clip-path="url(#s)">
+    <rect x="8" y="8" width="344" height="724" fill="#fff"/>
+    <text x="30" y="32" class="b" font-size="13">9:41</text>
+    <text x="24" y="72" class="b" font-size="18">×   Add fuel</text>
+    <line x1="8" y1="90" x2="352" y2="90" stroke="#EAECF0"/>
+
+    <text x="20" y="118" class="s" font-size="13">Litres *</text>
+    <rect x="20" y="126" width="152" height="44" rx="10" class="box"/>
+    <text x="32" y="154" font-size="16">32.5</text>
+    <text x="188" y="118" class="s" font-size="13">Amount (₹) *</text>
+    <rect x="188" y="126" width="152" height="44" rx="10" class="box"/>
+    <text x="200" y="154" font-size="16">3400</text>
+
+    <text x="20" y="194" class="s" font-size="13">Price per litre (₹)</text>
+    <rect x="20" y="202" width="320" height="44" rx="10" class="box"/>
+    <text x="32" y="230" font-size="16">104.62</text>
+    <text x="20" y="262" class="m" font-size="11">Worked out from amount ÷ quantity</text>
+
+    <text x="20" y="290" class="s" font-size="13">Odometer (km)</text>
+    <rect x="20" y="298" width="320" height="44" rx="10" class="box"/>
+    <text x="32" y="326" font-size="16">48215</text>
+    <text x="20" y="358" class="m" font-size="11">Suggested from GPS distance since your last fill</text>
+
+    <text x="20" y="390" class="s" font-size="14">Filled to full tank</text>
+    <text x="20" y="407" class="m" font-size="11">Mileage is measured between full-tank fills</text>
+    <rect x="292" y="382" width="46" height="26" rx="13" fill="#0B5FFF"/>
+    <circle cx="325" cy="395" r="10" fill="#fff"/>
+
+    <rect x="20" y="428" width="320" height="46" rx="10" class="box"/>
+    <text x="32" y="456" class="s" font-size="13">Date &amp; time</text>
+    <text x="328" y="456" class="s p" font-size="13" text-anchor="end">15 Nov 2026, 14:05 ›</text>
+
+    <text x="20" y="502" class="s" font-size="13">Station</text>
+    <rect x="20" y="510" width="320" height="44" rx="10" class="box"/>
+    <text x="32" y="538" font-size="16">Sai Petroleum, Chakan</text>
+    <text x="20" y="570" class="m" font-size="11">Filled in because you're at this pump</text>
+
+    <text x="180" y="606" class="b p" font-size="14" text-anchor="middle">More details</text>
+    <rect x="20" y="626" width="320" height="48" rx="12" fill="#0B5FFF"/>
+    <text x="180" y="656" class="b w" font-size="16" text-anchor="middle">Save</text>
+  </g>
+</svg>

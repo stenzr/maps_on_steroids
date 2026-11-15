@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="740" viewBox="0 0 360 740">
+  <title>Analytics (mockup)</title>
+  <style>
+    text { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; fill: #101828; }
+    .b { font-weight: 700; } .x { font-weight: 800; } .m { fill: #475467; } .p { fill: #0B5FFF; }
+  </style>
+  <defs><clipPath id="s"><rect x="8" y="8" width="344" height="724" rx="32"/></clipPath></defs>
+  <rect width="360" height="740" rx="40" fill="#101828"/>
+  <g clip-path="url(#s)">
+    <rect x="8" y="8" width="344" height="724" fill="#F2F4F7"/>
+    <rect x="8" y="8" width="344" height="84" fill="#fff"/>
+    <text x="30" y="32" class="b" font-size="13">9:41</text>
+    <text x="24" y="72" class="b" font-size="18">Analytics</text>
+
+    <rect x="20" y="104" width="320" height="96" rx="16" fill="#fff"/>
+    <text x="36" y="128" class="b" font-size="15">Summary</text>
+    <text x="36" y="164" class="x" font-size="20">₹6.54</text>
+    <text x="36" y="182" class="m" font-size="11">Cost per km</text>
+    <text x="140" y="164" class="x" font-size="20">15.7</text>
+    <text x="140" y="182" class="m" font-size="11">Lifetime km/L</text>
+    <text x="236" y="164" class="x" font-size="20">₹38,240</text>
+    <text x="236" y="182" class="m" font-size="11">Total spent</text>
+
+    <rect x="20" y="212" width="320" height="214" rx="16" fill="#fff"/>
+    <text x="36" y="238" class="b" font-size="15">Mileage (km/L)</text>
+    <g stroke="#EAECF0">
+      <line x1="56" y1="262" x2="324" y2="262"/><line x1="56" y1="296" x2="324" y2="296"/>
+      <line x1="56" y1="330" x2="324" y2="330"/><line x1="56" y1="364" x2="324" y2="364"/>
+    </g>
+    <g class="m" font-size="9" text-anchor="end">
+      <text x="50" y="265">18</text><text x="50" y="299">16</text><text x="50" y="333">14</text><text x="50" y="367">12</text>
+    </g>
+    <polyline points="68,318 104,300 140,330 176,290 212,306 248,284 284,298 316,280" fill="none" stroke="#0B5FFF" stroke-width="2.5" stroke-linejoin="round"/>
+    <g fill="#0B5FFF">
+      <circle cx="68" cy="318" r="3.5"/><circle cx="104" cy="300" r="3.5"/><circle cx="140" cy="330" r="3.5"/><circle cx="176" cy="290" r="3.5"/>
+      <circle cx="212" cy="306" r="3.5"/><circle cx="248" cy="284" r="3.5"/><circle cx="284" cy="298" r="3.5"/><circle cx="316" cy="280" r="3.5"/>
+    </g>
+    <polyline points="68,318 104,309 140,316 176,309 212,309 248,302 284,301 316,293" fill="none" stroke="#B54708" stroke-width="2" stroke-dasharray="6 4"/>
+    <g class="m" font-size="9" text-anchor="middle">
+      <text x="68" y="384">Jul</text><text x="140" y="384">Aug</text><text x="212" y="384">Sep</text><text x="284" y="384">Oct</text>
+    </g>
+    <text x="36" y="410" class="m" font-size="10"><tspan class="p">●</tspan> each full-to-full period   <tspan style="fill:#B54708">- -</tspan> rolling average (last 5)</text>
+
+    <rect x="20" y="438" width="320" height="232" rx="16" fill="#fff"/>
+    <text x="36" y="464" class="b" font-size="15">Fuel spend per month</text>
+    <g stroke="#EAECF0">
+      <line x1="56" y1="490" x2="324" y2="490"/><line x1="56" y1="530" x2="324" y2="530"/>
+      <line x1="56" y1="570" x2="324" y2="570"/><line x1="56" y1="610" x2="324" y2="610"/>
+    </g>
+    <g class="m" font-size="9" text-anchor="end">
+      <text x="50" y="493">₹9k</text><text x="50" y="533">₹6k</text><text x="50" y="573">₹3k</text><text x="50" y="613">₹0</text>
+    </g>
+    <g fill="#0B5FFF">
+      <rect x="68" y="556" width="26" height="54" rx="4"/><rect x="112" y="530" width="26" height="80" rx="4"/>
+      <rect x="156" y="566" width="26" height="44" rx="4"/><rect x="200" y="510" width="26" height="100" rx="4"/>
+      <rect x="244" y="542" width="26" height="68" rx="4"/><rect x="288" y="520" width="26" height="90" rx="4"/>
+    </g>
+    <g class="m" font-size="9" text-anchor="middle">
+      <text x="81" y="628">Jun</text><text x="125" y="628">Jul</text><text x="169" y="628">Aug</text>
+      <text x="213" y="628">Sep</text><text x="257" y="628">Oct</text><text x="301" y="628">Nov</text>
+    </g>
+    <text x="36" y="656" class="m" font-size="10">Also: price per litre, recent trips (distance, time, fuel, ₹, stops)</text>
+
+    <rect x="8" y="682" width="344" height="50" fill="#fff"/>
+    <line x1="8" y1="682" x2="352" y2="682" stroke="#EAECF0"/>
+    <text x="52" y="711" class="m" font-size="12" text-anchor="middle">Map</text>
+    <text x="134" y="711" class="m" font-size="12" text-anchor="middle">Fuel log</text>
+    <text x="222" y="711" class="b p" font-size="12" text-anchor="middle">Analytics</text>
+    <text x="304" y="711" class="m" font-size="12" text-anchor="middle">Settings</text>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="112" viewBox="0 0 360 112">
+  <title>Refuel prompt notification (mockup)</title>
+  <style>
+    text { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; fill: #101828; }
+    .b { font-weight: 700; } .m { fill: #475467; }
+  </style>
+  <rect x="0.5" y="0.5" width="359" height="111" rx="20" fill="#fff" stroke="#D0D5DD"/>
+  <circle cx="30" cy="30" r="12" fill="#0B5FFF"/>
+  <path d="M30 22 L36 36 L30 33 L24 36Z" fill="#fff"/>
+  <text x="50" y="35" class="m" font-size="12">RoadTrip Companion · now</text>
+  <text x="20" y="66" class="b" font-size="15">Did you refuel at Sai Petroleum?</text>
+  <text x="20" y="88" class="m" font-size="12">Tap to log it — date, time and station are filled in.</text>
+</svg>

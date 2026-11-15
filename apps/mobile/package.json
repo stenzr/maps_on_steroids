@@ -41,5 +41,6 @@
     "typecheck": "tsc --noEmit",
     "doctor": "expo-doctor"
   },
-  "private": true
+  "private": true,
+  "license": "Apache-2.0"
 }

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="740" viewBox="0 0 360 740">
+  <title>Fuel log (mockup)</title>
+  <style>
+    text { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; fill: #101828; }
+    .b { font-weight: 700; } .x { font-weight: 800; } .m { fill: #475467; } .w { fill: #fff; } .p { fill: #0B5FFF; }
+  </style>
+  <defs><clipPath id="s"><rect x="8" y="8" width="344" height="724" rx="32"/></clipPath></defs>
+  <rect width="360" height="740" rx="40" fill="#101828"/>
+  <g clip-path="url(#s)">
+    <rect x="8" y="8" width="344" height="724" fill="#F2F4F7"/>
+    <rect x="8" y="8" width="344" height="84" fill="#fff"/>
+    <text x="30" y="32" class="b" font-size="13">9:41</text>
+    <text x="24" y="72" class="b" font-size="18">Fuel log</text>
+
+    <rect x="20" y="104" width="320" height="124" rx="16" fill="#fff"/>
+    <text x="36" y="132" class="b" font-size="18">Swift</text>
+    <text x="324" y="132" class="b p" font-size="13" text-anchor="end">Change</text>
+    <text x="36" y="172" class="x" font-size="22">16.4</text>
+    <text x="36" y="190" class="m" font-size="11">Latest km/L</text>
+    <text x="140" y="172" class="x" font-size="22">15.9</text>
+    <text x="140" y="190" class="m" font-size="11">Last 5 fills</text>
+    <text x="240" y="172" class="x" font-size="22">15.7</text>
+    <text x="240" y="190" class="m" font-size="11">Lifetime</text>
+    <text x="36" y="214" class="m" font-size="10">Partial fills count toward the next full-to-full period</text>
+
+    <rect x="20" y="240" width="200" height="44" rx="12" fill="#0B5FFF"/>
+    <text x="120" y="267" class="b w" font-size="14" text-anchor="middle">＋ Add fuel</text>
+    <rect x="228" y="240" width="112" height="44" rx="12" fill="#fff" stroke="#D0D5DD"/>
+    <text x="284" y="267" class="b p" font-size="14" text-anchor="middle">Export CSV</text>
+
+    <g font-size="11">
+      <rect x="20" y="298" width="320" height="80" rx="12" fill="#fff"/>
+      <text x="36" y="322" class="b" font-size="14">32.50 L · ₹3,400</text>
+      <text x="36" y="340" class="m">15 Nov 2026, 14:05 · 48,215 km · ₹104.62/L</text>
+      <text x="36" y="357" class="m">Sai Petroleum, Chakan</text>
+      <text x="324" y="332" class="x p" font-size="20" text-anchor="end">16.4</text>
+      <text x="324" y="348" class="m" font-size="9" text-anchor="end">km/L</text>
+
+      <rect x="20" y="386" width="320" height="80" rx="12" fill="#fff"/>
+      <text x="36" y="410" class="b" font-size="14">12.00 L · ₹1,255 · partial</text>
+      <text x="36" y="428" class="m">09 Nov 2026, 18:40 · 47,912 km · ₹104.58/L</text>
+      <text x="36" y="445" class="m">Om Fuels, Alephata</text>
+
+      <rect x="20" y="474" width="320" height="80" rx="12" fill="#fff"/>
+      <text x="36" y="498" class="b" font-size="14">30.10 L · ₹3,140</text>
+      <text x="36" y="516" class="m">01 Nov 2026, 09:12 · 47,520 km · ₹104.32/L</text>
+      <text x="36" y="533" class="m">City Fuel Point, Pune</text>
+      <text x="324" y="508" class="x p" font-size="20" text-anchor="end">15.8</text>
+      <text x="324" y="524" class="m" font-size="9" text-anchor="end">km/L</text>
+
+      <rect x="20" y="562" width="320" height="96" rx="12" fill="#fff"/>
+      <text x="36" y="586" class="b" font-size="14">29.80 L · ₹3,105</text>
+      <text x="36" y="604" class="m">22 Oct 2026, 19:30 · 47,045 km · ₹104.20/L</text>
+      <text x="36" y="621" class="m">Highway Fuels, Khed</text>
+      <text x="36" y="640" font-size="10" style="fill:#B54708">Missed fill before this — excluded from mileage</text>
+    </g>
+
+    <rect x="8" y="682" width="344" height="50" fill="#fff"/>
+    <line x1="8" y1="682" x2="352" y2="682" stroke="#EAECF0"/>
+    <text x="52" y="711" class="m" font-size="12" text-anchor="middle">Map</text>
+    <text x="134" y="711" class="b p" font-size="12" text-anchor="middle">Fuel log</text>
+    <text x="222" y="711" class="m" font-size="12" text-anchor="middle">Analytics</text>
+    <text x="304" y="711" class="m" font-size="12" text-anchor="middle">Settings</text>
+  </g>
+</svg>

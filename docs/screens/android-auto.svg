@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <title>Android Auto home screen (mockup)</title>
+  <style>
+    text { font-family: Roboto, "Segoe UI", Helvetica, Arial, sans-serif; fill: #fff; }
+    .b { font-weight: 700; } .m { fill: #A6ADB8; }
+  </style>
+  <rect width="800" height="400" rx="18" fill="#0E0F12"/>
+  <rect x="0" y="0" width="76" height="400" rx="18" fill="#191B20"/>
+  <circle cx="38" cy="60" r="16" fill="#2A2D34"/>
+  <circle cx="38" cy="120" r="16" fill="#2A2D34"/>
+  <circle cx="38" cy="180" r="16" fill="#0B5FFF"/>
+  <path d="M38 171 L45 188 L38 184 L31 188Z" fill="#fff"/>
+  <text x="38" y="372" class="b" font-size="14" text-anchor="middle">9:41</text>
+
+  <text x="104" y="52" class="b" font-size="22">RoadTrip Companion</text>
+
+  <text x="104" y="92" class="m" font-size="14">Fuel</text>
+  <rect x="96" y="102" width="680" height="66" rx="12" fill="#1A1C21"/>
+  <text x="116" y="130" class="b" font-size="20">≈ 210 km range</text>
+  <text x="116" y="154" class="m" font-size="15">62% fuel · next pump 92 km: Sai Petroleum, Sangamner</text>
+
+  <text x="104" y="198" class="m" font-size="14">To Nashik</text>
+  <rect x="96" y="208" width="680" height="52" rx="12" fill="#1A1C21"/>
+  <text x="116" y="240" class="b" font-size="18">Petrol ahead</text>
+  <text x="752" y="241" class="m" font-size="22" text-anchor="end">›</text>
+  <rect x="96" y="266" width="680" height="52" rx="12" fill="#1A1C21"/>
+  <text x="116" y="298" class="b" font-size="18">Restrooms ahead</text>
+  <text x="752" y="299" class="m" font-size="22" text-anchor="end">›</text>
+  <rect x="96" y="324" width="680" height="52" rx="12" fill="#1A1C21"/>
+  <text x="116" y="356" class="b" font-size="18">Food ahead</text>
+  <text x="752" y="357" class="m" font-size="22" text-anchor="end">›</text>
+</svg>

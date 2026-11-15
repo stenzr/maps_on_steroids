@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="740" viewBox="0 0 360 740">
+  <title>Route preview (mockup)</title>
+  <style>
+    text { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; fill: #101828; }
+    .b { font-weight: 700; } .m { fill: #475467; } .w { fill: #fff; } .p { fill: #0B5FFF; }
+  </style>
+  <defs><clipPath id="s"><rect x="8" y="8" width="344" height="724" rx="32"/></clipPath></defs>
+  <rect width="360" height="740" rx="40" fill="#101828"/>
+  <g clip-path="url(#s)">
+    <rect x="8" y="8" width="344" height="724" fill="#F2F4F7"/>
+    <rect x="8" y="8" width="344" height="84" fill="#fff"/>
+    <text x="30" y="32" class="b" font-size="13">9:41</text>
+    <text x="24" y="72" class="b" font-size="18">‹  To Nashik</text>
+
+    <rect x="20" y="104" width="320" height="168" rx="16" fill="#E9EEE4"/>
+    <path d="M20 200 L340 160" stroke="#fff" stroke-width="6"/>
+    <path d="M120 104 L150 272" stroke="#fff" stroke-width="5"/>
+    <polyline points="70,250 92,214 110,196 150,186 190,160 224,152 262,128 300,118" fill="none" stroke="#0B5FFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="70" cy="250" r="6" fill="#fff" stroke="#0B5FFF" stroke-width="3"/>
+    <g transform="translate(300,118)"><path d="M0 0 C-10 -12 -10 -26 0 -26 C10 -26 10 -12 0 0Z" fill="#0B5FFF"/><circle cy="-17" r="4" fill="#fff"/></g>
+    <g transform="translate(224,152)"><path d="M0 0 C-10 -12 -10 -26 0 -26 C10 -26 10 -12 0 0Z" fill="#B54708"/><circle cy="-17" r="4" fill="#fff"/></g>
+    <g transform="translate(150,186)"><path d="M0 0 C-10 -12 -10 -26 0 -26 C10 -26 10 -12 0 0Z" fill="#C11574"/><circle cy="-17" r="4" fill="#fff"/></g>
+    <text x="64" y="268" class="m" font-size="10">Pune</text>
+
+    <rect x="20" y="284" width="320" height="80" rx="16" fill="#fff"/>
+    <text x="36" y="318" class="b" font-size="20">208 km</text>
+    <text x="36" y="338" class="m" font-size="11">Distance</text>
+    <text x="134" y="318" class="b" font-size="20">4 h 05 m</text>
+    <text x="134" y="338" class="m" font-size="11">Drive time</text>
+    <text x="242" y="318" class="b" font-size="20">₹1,420</text>
+    <text x="242" y="338" class="m" font-size="11">Est. fuel cost</text>
+    <text x="242" y="353" class="m" font-size="10">13.7 L</text>
+
+    <rect x="20" y="376" width="320" height="118" rx="16" fill="#fff"/>
+    <text x="36" y="402" class="b" font-size="16">Fuel stops</text>
+    <text x="36" y="424" class="b p" font-size="10">ARRIVE WITH ≈ 95 KM RANGE</text>
+    <text x="36" y="442" class="b" font-size="14">Sai Petroleum, Sangamner</text>
+    <text x="36" y="459" class="m" font-size="11">92 km ahead · +3 min · ★ 4.2 · <tspan style="fill:#027A48">Open</tspan></text>
+    <text x="36" y="475" class="m" font-size="11">Petrol ₹104.21</text>
+    <rect x="248" y="430" width="78" height="30" rx="8" fill="#fff" stroke="#D0D5DD"/>
+    <text x="287" y="450" class="b p" font-size="12" text-anchor="middle">Add stop</text>
+
+    <rect x="20" y="506" width="320" height="104" rx="16" fill="#fff"/>
+    <text x="36" y="532" class="b" font-size="16">Breaks every 2 h</text>
+    <text x="36" y="554" class="b p" font-size="10">AFTER ~2 H · FOOD + RESTROOM</text>
+    <text x="36" y="572" class="b" font-size="14">Hotel Annapurna, Narayangaon</text>
+    <text x="36" y="589" class="m" font-size="11">84 km ahead · +4 min · ★ 4.3 · <tspan style="fill:#027A48">Open</tspan></text>
+    <text x="36" y="603" font-size="10" class="b" style="fill:#0842B5">Restroom (Google)</text>
+    <rect x="248" y="560" width="78" height="30" rx="8" fill="#fff" stroke="#D0D5DD"/>
+    <text x="287" y="580" class="b p" font-size="12" text-anchor="middle">Add stop</text>
+
+    <rect x="20" y="620" width="320" height="42" rx="12" fill="#0B5FFF"/>
+    <text x="180" y="646" class="b w" font-size="15" text-anchor="middle">Start</text>
+    <rect x="20" y="670" width="320" height="42" rx="12" fill="#fff" stroke="#D0D5DD"/>
+    <text x="180" y="696" class="b p" font-size="15" text-anchor="middle">Navigate in Google Maps</text>
+    <text x="180" y="726" class="m" font-size="9" text-anchor="middle">Route and places from Google Maps</text>
+  </g>
+</svg>

@@ -188,7 +188,7 @@ What the errors mean:
 - `NOT_CONFIGURED`: `GOOGLE_MAPS_API_KEY` is empty.
 - `UNAUTHORIZED`: the secret header doesn't match.
 
-Optional, for road use: deploy to Cloud Run with the commands in [README.md §2](README.md#2-run-the-proxy). Ask the human before deploying anything, since it's outward-facing and billed.
+Optional, for road use: deploy to Cloud Run with the commands in [README.md → Deploy the proxy](README.md#deploy-the-proxy). Ask the human before deploying anything, since it's outward-facing and billed.
 
 ---
 
@@ -242,7 +242,7 @@ For later JavaScript-only changes: `npx expo start` (the dev client on the phone
    - a fuel stop is suggested;
    - after the stop near Chakan (~25 km), a "Did you refuel at …? (test)" notification appears.
 5. **Fuel log → Export CSV** opens the share sheet.
-6. Optional, Android Auto: follow [README.md §5](README.md#5-android-auto) (DHU + *Unknown sources*).
+6. Optional, Android Auto: follow [README.md → Android Auto testing](README.md#android-auto-testing) (DHU + *Unknown sources*).
 
 If something fails, collect `adb logcat *:E ReactNativeJS:V` and the Metro output before changing code.
 
