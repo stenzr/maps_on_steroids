@@ -13,6 +13,8 @@ A Google Maps–based companion for road trips in India. It adds what Google Map
 
 Units are km, litres (kg for CNG) and ₹. Android comes first; the codebase is React Native (Expo), so iOS can follow.
 
+> Setting up on a new machine, or with Claude Code? See **[SETUP.md](SETUP.md)** for the architecture diagrams and a step-by-step runbook with verification commands.
+
 ## Layout
 
 ```
